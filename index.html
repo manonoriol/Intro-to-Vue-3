@@ -25,6 +25,13 @@
             <p v-else-if="inventory <= 10 && inventory > 0">Almost Sold Out!</p>
             <p v-else>Out of Stock</p>
             <a :href="url" target="_blank">Click here</a>
+            <ul>
+              <li v-for="detail in details"> {{ detail }}</li>
+            </ul>
+            <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
+            <ul>
+              <li v-for="(size, index) in sizes" :key="index">{{ size }}</li>
+            </ul>
           </div>
         </div>
       </div>
