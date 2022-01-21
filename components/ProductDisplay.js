@@ -76,6 +76,7 @@ methods: {
     },
     addReview(review) {
       this.reviews.push(review)
+      console.log('review added')
     }
 },
 computed: {
